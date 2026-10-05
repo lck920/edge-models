@@ -1,0 +1,11 @@
+1. malaysia car plate number Computer Vision Model
+https://universe.roboflow.com/gocar/malaysia-car-plate-number
+
+2. Carpark and License Plate Computer Vision Model
+https://universe.roboflow.com/chung-yi-lai/carpark-and-license-plate
+
+3. Illegal Parking Computer Vision Model
+https://universe.roboflow.com/parking-amu50/illegal-parking
+
+4. parking slots Computer Vision Dataset
+https://universe.roboflow.com/fatema-yusuf-gkrnh/parking-slots-ebx5s
