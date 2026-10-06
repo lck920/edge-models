@@ -9,3 +9,6 @@ https://universe.roboflow.com/parking-amu50/illegal-parking
 
 4. parking slots Computer Vision Dataset
 https://universe.roboflow.com/fatema-yusuf-gkrnh/parking-slots-ebx5s
+
+5. Smartpark
+https://www.kaggle.com/datasets/aymannoor84/smartpark
