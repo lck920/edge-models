@@ -125,7 +125,15 @@ The board is set up from the PC with MDT (Mendel Development Tool) [3]. The Wind
    sudo apt-get install -y tesseract-ocr python3-numpy python3-pil
    ```
 
-7. **Copy the files to the board.** Type `exit` to leave the board's shell, then in Git Bash, in this project folder:
+7. **Copy the files to the board.** Only these three files are needed on the board, plus a photo to test with. The `.pt` files, the notebook and the datasets are not needed.
+
+   | File | Where it is in this project |
+   |---|---|
+   | `edge_tpu_detection.py` | the project folder |
+   | `parking_detection_yolov8n_edgetpu.tflite` | `datasets/models/` |
+   | `license_plate_yolov8n_edgetpu.tflite` | `datasets/models/` |
+
+   Type `exit` to leave the board's shell, then in Git Bash, in this project folder:
 
    ```
    mdt push edge_tpu_detection.py
@@ -134,7 +142,7 @@ The board is set up from the PC with MDT (Mendel Development Tool) [3]. The Wind
    mdt push photo.jpg
    ```
 
-   The files go to the home folder on the board (`/home/mendel`). `photo.jpg` is any car park photo to test with.
+   The files go to the home folder on the board (`/home/mendel`). `photo.jpg` is any car park photo to test with. The script looks for the two `.tflite` files next to itself, so keep all three in the same folder and do not rename them.
 
 ### 3. Run
 
