@@ -42,6 +42,7 @@ To run locally instead, keep the notebook next to the `datasets` folder and inst
 ### Notebook steps
 
 - **Steps 1-17:** load the car park dataset, train and evaluate the parking model, and test it on one image.
+- **Steps 17.1-17.6:** send the model's predictions of the Step 17 image to BigQuery (one row per object: `timestamp`, `image_name`, `predicted_class`, `confidence`, `latency_ms`), for a Looker Studio dashboard. Create the BigQuery table first and set `PROJECT_ID` in Step 17.2.
 - **Step 18:** load both models: `detect_parking(image)` and `read_plate_number(image)`.
 - **Step 19:** the owner notification for every double-parked car, with its plate number.
 - **Step 20:** the dashboard feed (a virtual box per parking area: free, occupied or double-parked).
