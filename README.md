@@ -42,8 +42,8 @@ To run locally instead, keep the notebook next to the `datasets` folder and inst
 ### Notebook steps
 
 - **Steps 1-17:** load the car park dataset, train and evaluate the parking model, and test it on one image.
-- **Steps 17.1-17.6:** send the model's predictions of the Step 17 image to BigQuery (one row per object: `timestamp`, `image_name`, `predicted_class`, `confidence`, `latency_ms`), for a Looker Studio dashboard. Create the BigQuery table first and set `PROJECT_ID` in Step 17.2.
-- **Step 18:** load both models: `detect_parking(image)` and `read_plate_number(image)`.
+- **Steps 17.1-17.7:** load both models, then send the predictions to BigQuery (one row per object: `timestamp`, `image_name`, `predicted_class`, `confidence`, `latency_ms`, `plate`, `location`, `platform`) and show the dashboard numbers: available spaces, occupancy, illegal parking, offender list, trends, repeat offenders, plate read rate, latency and FPS, and low-confidence detections. Each number prints its query, ready to paste into Looker Studio as a Custom Query. Create the BigQuery table first and set `PROJECT_ID` in Step 17.2.
+- **Step 18:** test both models together on one image.
 - **Step 19:** the owner notification for every double-parked car, with its plate number.
 - **Step 20:** the dashboard feed (a virtual box per parking area: free, occupied or double-parked).
 - **Step 21:** convert both models for the Edge TPU.
